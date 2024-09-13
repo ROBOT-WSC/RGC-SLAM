@@ -1,0 +1,47 @@
+<launch>
+
+     <!--- Sim Time -->
+    <param name="/use_sim_time" value="true" />
+
+    <param name="scan_line" type="int" value="16" />
+
+    <!-- if 1, do mapping 10 Hz, if 2, do mapping 5 Hz. Suggest to use 1, it will adjust frequence automaticlly -->
+    <param name="mapping_skip_frame" type="int" value="1" />
+
+    <!-- remove too closed points -->
+    <param name="minimum_range" type="double" value="0.5"/>
+    <param name="maxmum_range" type="double" value="80"/>
+
+    <param name="mapping_line_resolution" type="double" value="0.2"/>
+    <param name="mapping_plane_resolution" type="double" value="0.4"/>
+
+    <param name="USE_IMU" type="int" value="1"/>
+    <param name="USE_intensity" type="int" value="1"/> 
+    <param name="USE_GROUND" type="int" value="1"/>
+    <param name="USE_GROUND2" type="int" value="1"/>
+    <param name="USE_GNSS" type="int" value="0"/>
+    <param name="LoopClosureEnable" type="int" value="1"/>
+    
+    <param name="keyframeAddingDistance" type="double" value="0.3"/>
+    <param name="keyframeAddingAngle" type="double" value="0.2"/>
+    <param name="surroundingKeyframeSearchRadius" type="double" value="15"/>
+    <param name="globalMapDensity" type="double" value="0.2"/>
+
+    <param name="map_update" type="int" value="1"/>
+    <param name="saveDirectory" type="string" value="/home/wsc/1111/database/aold"/>
+
+    <param name="init_x" type="double" value="0.0"/>
+    <param name="init_y" type="double" value="0.0"/>
+    <param name="init_z" type="double" value="0.0"/>
+    <param name="init_yaw" type="double" value="0"/> 
+
+    <node pkg="rgc_slam" type="scanRegistration" name="scanRegistration"/>
+    <node pkg="rgc_slam" type="RGC_odometer" name="RGC_odometer"  />
+    <node pkg="rgc_slam" type="RGC_mapping" name="RGC_mapping" />
+
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="wsc_rviz" args="-d $(find rgc_slam)/rviz_cfg/RGC_SLAM.rviz" />
+    </group>
+
+</launch>

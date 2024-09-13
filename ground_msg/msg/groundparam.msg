@@ -1,0 +1,12 @@
+Header header
+float64 normx
+float64 normy
+float64 normz
+float64 vector1x
+float64 vector1y
+float64 vector1z
+float64 vector2x
+float64 vector2y
+float64 vector2z
+float64 distance
+float64 source

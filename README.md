@@ -72,6 +72,4 @@ If you find RGC-SLAM is useful in your research or applications, please consider
 ```
 ## Acknowledgements
 
-We thank the authors of the [FastGICP](https://github.com/SMRT-AIST/fast_gicp) and [A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM) open-source packages:
-
-Kenji Koide, Masashi Yokozuka, Shuji Oishi, and Atsuhiko Banno, “Voxelized GICP for Fast and Accurate 3D Point Cloud Registration,” in _IEEE International Conference on Robotics and Automation (ICRA)_, IEEE, 2021, pp. 11 054–11 059.
+We thank the authors of the [FastGICP](https://github.com/SMRT-AIST/fast_gicp) and [A-LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM) open-source packages.

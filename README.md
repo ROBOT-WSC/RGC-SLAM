@@ -7,14 +7,14 @@
 >
 > [IEEE Transactions on Intelligent Vehicles](https://ieeexplore.ieee.org/abstract/document/10654559)
 
-### News
+## News
 
 
 
 * **`13 Sept 2024`:**  Code updata
 * **`28 Aug 2024`:** Accepted by [IEEE TIV](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274857)! 
 
-Getting Started
+## Getting Started
 
 
 ### Instructions

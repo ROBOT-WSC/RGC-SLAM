@@ -45,7 +45,7 @@ catkin_make
 For your convenience, we provide example test data [here](https://drive.google.com/drive/folders/1bt9vWPVgTF8I8JXSUO-Dpi3n2vomG6t9) (4 sequences, `sequence1_to_4.zip`). To run, first launch RGC-SLAM (with default point cloud and IMU topics) via:
 
 ```sh
-roslaunch direct_lidar_odometry dlo.launch
+roslaunch rgc_slam run.launch
 ```
 
 In a separate terminal session, play back the downloaded bag:
